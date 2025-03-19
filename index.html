@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Heading -->
+    <header> 
+        <h1 class="h_header"> Samarth Kumar</h1>
+        <p class="p_header"> Aspiring Data Scientist and ML Engineer </p>
+        
+        <div class="navbar" id="myTopNav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">Dark Mode</button></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <!-- About Section -->
+    <section id="about" class="about_section">
+        <div>
+            <h2> About Me </h2>
+
+            <p>
+                First, welcome to my webpage! I am currently a graduate student at Auburn University
+                pursuing an Master's degree in Data Science and Engineering. I previously graduated from Auburn with a Bachelor's 
+                degree in Computer Science. I have a passion for data science and artificial intelligence and have completed
+                various projects in the field. I am proficient in Java, Python, and SQL. The projects section below showcases some of the work I have done. When it comes
+                to machine learning, I have experience in Scikit-learn and am currently exploring TensorFlow and PyTorch. I also have 
+                some experience in web development, specifically with HTML, CSS, JavaScript as well as frameworks like Flask and React.
+            </p>
+        </div>
+
+        <!-- <div class="about-image">
+            <img src="images/samarth.jpg" alt="Samarth">
+        </div> -->
+    </section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects_section">
+        <h2> Projects </h2>
+        <div class="projects">
+            <div class="project">
+                <!-- <img src="images/project1.jpg" alt="Project 1"> -->
+                <h3> K-Means Clustering Tool </h3>
+                <p> Full-stack web application that utilizes the K-Means machine learning algorithm to segment
+                    images based on dominant colors. The application allows users to upload an image, enter a desired 
+                    value of K for the number of clusters, view and download the segmented image. The application relies on
+                    HTML, CSS, and JavaScript for the frontend while the backend is built using Python and Flask. The K-Means 
+                    algorithm was built from scratch in Python using NumPy and OpenCV while Flask was used for building the API 
+                    to connect with the frontend.
+                </p>
+            </div>
+
+            <div class="project">
+                <!-- <img src="images/project2.jpg" alt="Project 2"> -->
+                <h3> Convolutional Neural Networks for Image Style Transformation </h3>
+                <p> Developed a convolutional neural network model that can successfully 
+                    apply the style of an image to the semantic style of another. The model 
+                    was implemented in Python using TensorFlow, OpenCV, and a pretrained VGG-19 model.
+                    This project was inspired by the research published by Gatys, et al. on the same topic. </p>
+            </div>
+
+            <div class="project">
+                <!-- <img src="images/project3.jpg" alt="Project 3"> -->
+                <h3> Twitter Sentiment Analysis using Natural Language Processing. </h3>
+                <p> Performed emotional sentiment analysis on 400k text samples from Twitter. 
+                    Performed various NLP techniques, such as tokenization, stop word removal, etc. 
+                    Trained multiple Machine Learning models (including Logistic Regression, Naive Bayes,
+                    and Multilayer Perceptron) using Scikit-learn, and achieved an average accuracy of 87%. </p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section-->
+    <section id="experience" class="experience_section">
+        <h2> Technical Experience </h2>
+        <div class="experience">
+            <div class="job">
+                <h3> IT Systems Intern </h3>
+                <p> Cirrus Aircraft, Duluth, MN </p>
+                <p> May 2024 - August 2024 </p>
+                <p> Developed an application to automate the renewal reminders for 80+ software license subscriptions. Acquired foundational knowledge of cloud computing 
+                    and successfully obtained the Microsoft Azure AZ-900 certification. Cleaned and organized data. Created visually compelling Power BI reports. 
+                   </p>
+            </div>
+
+            <div class="job">
+                <h3> Software Engineer Intern </h3>
+                <p> OCV Apps, Opelika, AL </p>
+                <p> September 2022 - December 2022 </p>
+                <p> Performed quality assurance testing on 100+ mobile applications. Configured application features through JSON feeds. Managed and maintained version control
+                    using Git. Submitted iOS applications for release through App Store Connect. Learned the basics of Swift for developing iOS applications. 
+                    Used collaborative filtering and content-based filtering techniques to recommend products to users. </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills_section">
+        <h2> Skills </h2>
+
+        <!-- Dropdown Menu -->
+        <div class="skills_dropdown">
+            <label for="skills-select">Select a Skill Category:</label>
+            <select id="skills-select" onchange="showSkills()">
+                <option value="" selected disabled>Choose a category</option>
+                <option value="programming">Programming</option>
+                <option value="webdev">Web Development</option>
+          <!--  <option value="databases">Databases</option> -->
+                <option value="datascience">Data Science</option> 
+                <option value="machinelearning">Machine Learning</option>
+            </select>
+        </div>
+
+        <!-- Skills Display -->
+        <div id="skills-display" class="skills_display">
+            <p>Select a category to view skills.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact_section">
+        <h2>Contact</h2>
+        <p>Email: <a>szk0187@auburn.edu</a></p>
+        <p>GitHub: <a href="https://github.com/SamarthK1" target="_blank">github.com/SamarthK1</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/thesamarthkumar" target="_blank">linkedin.in/thesamarthkumar</a></p>
+        <a href="documents/Resume.pdf" download class="resume_button">Download Resume</a>
+    </section>
+
+    <!-- Dark Mode -->
+    <!-- <button id="theme-toggle">Toggle Dark Mode</button> -->
+
+</body>
+
+<script src="script.js"></script>
+</html>
