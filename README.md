@@ -10,3 +10,5 @@ Includes the following files:
 * documents - folder that contains my resume.
 
 I opted to create a new repository for the webpage rather than using my profile.
+
+Click [here](https://samarthk1.github.io) to view.
