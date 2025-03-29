@@ -11,4 +11,4 @@ Includes the following files:
 
 I opted to create a new repository for the webpage rather than using my profile.
 
-Click [here](https://samarthk1.github.io) to view.
+Click [here](https://thesamarthkumar.github.io) to view.
